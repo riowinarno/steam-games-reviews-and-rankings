@@ -51,12 +51,14 @@ This project analyzes historical and contemporary data from Steam's top-performi
 ## 📁 Repository Structure
 
 ```
-├── data/
-│   └── steam_games.csv          # Raw / preprocessed dataset
-├── notebooks/
-│   └── steam_eda.ipynb          # Main EDA Jupyter Notebook
-├── README.md                    # Project documentation
-└── requirements.txt             # Python package dependencies
+├── datasets/                     # Local dataset folder (ignored by Git; download from Kaggle)
+│   ├── games_description.csv     # Game metadata, genres, and release dates
+│   ├── games_ranking.csv         # Top sales, revenue, and review rankings
+│   └── steam_game_reviews.csv    # User review texts and sentiment labels
+├── .gitignore                    # Excludes large dataset files and local environments
+├── notebook.ipynb                # Main EDA and text-mining Jupyter Notebook
+├── README.md                     # Project documentation and key findings
+└── requirements.txt              # Python package dependencies
 ```
 
 ## 🚀 Getting Started
